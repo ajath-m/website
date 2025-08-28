@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajath — Personal Webpage</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071024 0%, #071024 60%, #031123 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+    .card{width:100%;max-width:980px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:28px;box-shadow:0 6px 30px rgba(2,6,23,0.6);display:grid;grid-template-columns:1fr 320px;gap:24px}
+    header{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between}
+    .name{font-size:28px;font-weight:700;letter-spacing:0.2px}
+    .role{color:var(--muted);font-size:13px}
+    .left{padding-right:8px}
+    .about{background:var(--glass);border-radius:8px;padding:18px}
+    h2{margin:0 0 8px 0}
+    p{color:var(--muted);margin:0;font-size:15px;line-height:1.5}
+    .section{margin-top:14px}
+    .edu, .links{background:transparent;padding:14px;border-radius:8px}
+    ul{padding-left:18px;margin:6px 0;color:var(--muted)}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:600}
+    .right{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;display:flex;flex-direction:column;gap:12px}
+    .meta{font-size:13px;color:var(--muted)}
+    .links a{display:block;margin:6px 0;color:#cfe8ff;text-decoration:none}
+    footer{grid-column:1/-1;margin-top:18px;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.card{grid-template-columns:1fr;}.right{order:2}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <div class="left">
+        <div class="name">Rajath</div>
+        <div class="role">Computer Science Student | Tech Learner | Future Data Scientist</div>
+      </div>
+      <div>
+        <a class="btn" href="#contact">Contact / Resume</a>
+      </div>
+    </header><section class="about">
+  <h2>About Me</h2>
+  <p>I am currently studying in the 3rd semester of Computer Science at Dayananda Sagar University. I have a strong interest in web development, data science, and using technology to solve real-world problems. I am actively learning GitHub and building personal projects to improve my skills.</p>
+
+  <div class="section edu">
+    <strong>Education</strong>
+    <ul>
+      <li>B.E. in Computer Science — Dayananda Sagar University (3rd Semester)</li>
+    </ul>
+  </div>
+
+  <div class="section links">
+    <strong>Quick Links</strong>
+    <a href="#">GitHub</a>
+    <a href="#">Portfolio</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</section>
+
+<aside class="right" aria-label="side panel">
+  <div>
+    <div style="font-weight:700">Skills</div>
+    <div class="meta">HTML • CSS • JavaScript • Python • Git • Basic Data Science</div>
+  </div>
+
+  <div>
+    <div style="font-weight:700">Current Focus</div>
+    <div class="meta">Building small web apps, learning data analysis and visualization, and practicing algorithms.</div>
+  </div>
+
+  <div id="contact">
+    <div style="font-weight:700">Contact</div>
+    <div class="meta">Email: <a href="mailto:your.email@example.com">your.email@example.com</a></div>
+    <div style="margin-top:10px"><a class="btn" href="#">Download Resume</a></div>
+  </div>
+</aside>
+
+<footer>
+  Tip: Replace the placeholder links & email with your real links. Want a downloadable PDF resume or a GitHub-ready README version? I can generate them.
+</footer>
+
+  </main>
+</body>
+</html>
